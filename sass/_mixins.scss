@@ -1,0 +1,44 @@
+@mixin general {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+@mixin container {
+  padding: 1vw;
+}
+
+@mixin main-tittle($color) {
+  color: $color;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 15px;
+  font-size: clamp(30px, 50px, 70px);
+}
+
+@mixin sub-tittle($color) {
+  color: $color;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: clamp(20px, 40px, 60px)
+}
+
+@mixin paragraph-text {
+  text-align: justify;
+  color: $text-color;
+  line-height: 18px;
+  display: block;
+  margin: 0 auto;
+  margin: 0 20px 0px 20px;
+  padding-bottom: 20px
+}
+
+@mixin line-divisor {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+

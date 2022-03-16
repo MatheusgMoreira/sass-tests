@@ -1,0 +1,39 @@
+//Col
+
+@import 'vars';
+@import 'classes';
+
+@function largura-coluna($col) {
+
+    @return percentage($col/$total-cols);
+  
+  }
+  
+  @for $i from 1 through $total-cols {
+    .col-#{$i} {
+      width: largura-coluna($i);
+      float: left;
+    }
+  }
+
+@keyframes is-boucing {
+  to {
+    transform: translateY(30px);
+  }
+}
+
+@keyframes text-reveal {
+  from {
+    transform: translateX(-101%);
+  }
+
+  to {
+    transform: translateX(101%);
+  }
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}

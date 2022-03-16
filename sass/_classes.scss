@@ -1,0 +1,31 @@
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 10px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.text-reveal {
+
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    animation: text-reveal 2s cubic-bezier(0.85, 0, 0.15, 1) forwards;
+    background-color: #157bad;
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.is-boucing {
+  animation: is-boucing 1s ease-in-out alternate infinite;
+}

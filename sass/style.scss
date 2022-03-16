@@ -1,0 +1,31 @@
+@import 'mixins';
+@import 'vars';
+@import 'classes';
+@import 'keyframes';
+
+body {
+    @include general;
+    @include container;
+}
+
+h1 {
+    @include main-tittle($main-tittle-color);
+    animation: fade 1ms 1s forwards;
+    opacity: 0
+}
+
+h2 {
+    @include sub-tittle($sub-tittle-color);
+}
+
+h3 {
+    @include sub-tittle($sub-tittle-color);
+}
+
+hr {
+    @include line-divisor;
+}
+
+p {
+    @include paragraph-text;
+}
